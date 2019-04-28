@@ -1,0 +1,25 @@
+#include "tree.h"
+void code(PROG *n, char* inputPath);
+void codeProgram(PROG *p);
+void codeDeclaration(DEC *d);
+void codeTypeInstanceFieldDecl(FIELD_DECL* f);
+void codeTypeInstance(TYPE* t);
+void codeVarSpec(VAR_SPEC *vs);
+void codeInit();
+void codePrint(EXP_LIST* el, bool format);
+void codeFuncSpec(FUNC_SPEC *fs);
+void codeParameters(PARAMETERS *p);
+void codeCast(EXP* exp);
+STMT* incToAssign(STMT* s);
+void codeStatementList(STMT_LIST *b, STMT* PostStmt);
+void codeStatement(STMT *s, STMT* PostStmt);
+void codeStatementAssign(STMT *s);
+void codeStatementAssignOp(STMT *s);
+void codeStatementShortDecVar(VAR_SPEC *vs);
+void codeStatementSwitch(STMT* s);
+void codeStatementFor(STMT* s);
+void codeEXP(EXP* exp);
+void codeEXP_LIST(EXP_LIST *list, bool clone);
+void codeBinary(EXP* lhs, EXP* rhs, char* op);
+void codeUnary(EXP* exp, char* op);
+void codeCloneEXP(EXP* e);

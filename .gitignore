@@ -1,0 +1,11 @@
+src/lex.yy.c
+src/*.tab.*
+src/lex.yy.o
+src/golite
+src/*.o
+src/*.output
+.ycm_extra_conf.py
+p.go
+p1.go
+invalidtype.sh
+*.swp
